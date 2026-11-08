@@ -2028,6 +2028,129 @@ a:focus {
     display: block;
 }
 
+/* =========================
+   REVIEW PELANGGAN
+========================= */
+
+.review_section {
+   background: #f8f8f6;
+   padding: 80px 0;
+}
+
+.review_section .heading_container {
+   margin-bottom: 45px;
+}
+
+.review_section .heading_container p {
+   color: #777;
+   margin-top: 10px;
+}
+
+/* GRID */
+.review_grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 22px;
+   align-items: start;
+}
+
+/* CARD */
+.review_card {
+   background: #fff;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+   transition: transform 0.3s ease;
+}
+
+.review_card:hover {
+   transform: translateY(-5px);
+}
+
+/* FOTO */
+.review_photo img {
+   width: 100%;
+   height: auto;
+   display: block;
+   object-fit: cover;
+}
+
+/* TULISAN */
+.review_text {
+   padding: 28px;
+}
+
+.review_quote {
+   color: #b28b58;
+   font-size: 25px;
+   margin-bottom: 15px;
+}
+
+.review_text p {
+   color: #555;
+   font-size: 15px;
+   line-height: 1.8;
+   margin-bottom: 20px;
+}
+
+.review_text h5 {
+   font-size: 14px;
+   font-weight: 600;
+   color: #222;
+   margin-bottom: 0;
+}
+
+
+/* GOOGLE REVIEW BUTTON */
+.google_review_button {
+   text-align: center;
+   margin-top: 35px;
+}
+
+.google_review_button a {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   padding: 13px 27px;
+   background: #b25858;
+   color: #fff;
+   border-radius: 30px;
+   font-size: 14px;
+   font-weight: 600;
+   text-decoration: none;
+   transition: 0.3s;
+}
+
+.google_review_button a:hover {
+   background: #967044;
+   color: #fff;
+   transform: translateY(-3px);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+   .review_grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 576px) {
+   .review_section {
+      padding: 55px 0;
+   }
+
+   .review_grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+   }
+
+   .review_text {
+      padding: 22px;
+   }
+}
+
 /* =========================================================
    FOOTER SECTION
 ========================================================= */
